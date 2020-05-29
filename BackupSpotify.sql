@@ -84,13 +84,13 @@ CREATE TABLE `Cancion` (
   `Id_Cancion` int(11) NOT NULL AUTO_INCREMENT,
   `Nombre_Cancion` varchar(50) DEFAULT NULL,
   `Numero_Visitas` int(11) NOT NULL,
-  `Duracion_Cancion` int(11) NOT NULL,
+  `Duracion_Cancion` time DEFAULT NULL,
   `Descripcion_Cancion` varchar(50) DEFAULT NULL,
   `Id_Disco` int(11) NOT NULL,
   PRIMARY KEY (`Id_Cancion`),
   KEY `Id_Disco` (`Id_Disco`),
   CONSTRAINT `Id_Disco` FOREIGN KEY (`Id_Disco`) REFERENCES `Disco` (`Id_Disco`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,6 +99,7 @@ CREATE TABLE `Cancion` (
 
 LOCK TABLES `Cancion` WRITE;
 /*!40000 ALTER TABLE `Cancion` DISABLE KEYS */;
+INSERT INTO `Cancion` VALUES (1,'Romantic Englishwoman, The',1,'00:18:00','Summer Palace (Yihe yuan)',1),(2,'Herbie Rides Again',2,'14:50:00','Street Trash',2),(3,'Choose Me',3,'10:54:00','Wanda Sykes: Sick and Tired',3),(4,'Eden',4,'17:03:00','Maiden Heist, The',4),(5,'Deadly Companions, The',5,'14:44:00','Whatever Works',5),(6,'Main Prem Ki Diwani Hoon',6,'21:10:00','Barbershop',6),(7,'Vertical Limit',7,'17:24:00','The Hunchback of Paris',7),(8,'Treasure of the Sierra Madre, The',8,'05:13:00','27 Missing Kisses',8),(9,'Guest of Cindy Sherman',9,'17:29:00','Goldfish Memory',9),(10,'Caretakers, The',10,'06:49:00','While She Was Out',10),(11,'Irene, Go Home! (Irena do domu!)',11,'03:24:00','Bedtime Stories',11),(12,'Becoming Jane',12,'13:11:00','Love! Valour! Compassion!',12),(13,'Calling Dr. Death',13,'18:51:00','Conjuring, The',13);
 /*!40000 ALTER TABLE `Cancion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -391,4 +392,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-29  4:38:47
+-- Dump completed on 2020-05-29  4:53:41
