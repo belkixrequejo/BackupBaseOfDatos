@@ -149,7 +149,7 @@ CREATE TABLE `Favorito` (
   KEY `Id_Cancion` (`Id_Cancion`),
   CONSTRAINT `Id_Cancion` FOREIGN KEY (`Id_Cancion`) REFERENCES `Cancion` (`Id_Cancion`),
   CONSTRAINT `Id_Usuario` FOREIGN KEY (`Id_Usuario`) REFERENCES `Usuario` (`Id_Usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -158,6 +158,7 @@ CREATE TABLE `Favorito` (
 
 LOCK TABLES `Favorito` WRITE;
 /*!40000 ALTER TABLE `Favorito` DISABLE KEYS */;
+INSERT INTO `Favorito` VALUES (1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5),(6,6,6),(7,7,7),(8,8,8),(9,9,9),(10,10,10),(11,11,11),(12,12,12),(13,13,13);
 /*!40000 ALTER TABLE `Favorito` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -393,4 +394,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-29  4:58:17
+-- Dump completed on 2020-05-29  5:01:35
