@@ -119,7 +119,7 @@ CREATE TABLE `Disco` (
   PRIMARY KEY (`Id_Disco`),
   KEY `Id_Artista` (`Id_Artista`),
   CONSTRAINT `Id_Artista` FOREIGN KEY (`Id_Artista`) REFERENCES `Artistas` (`Id_Artista`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,6 +128,7 @@ CREATE TABLE `Disco` (
 
 LOCK TABLES `Disco` WRITE;
 /*!40000 ALTER TABLE `Disco` DISABLE KEYS */;
+INSERT INTO `Disco` VALUES (1,'Sol ',1,1,'2019-10-07',NULL),(2,'All American Chump',2,2,'2019-09-27',NULL),(3,'Red River',3,3,'2020-05-01',NULL),(4,'Man of the West',4,4,'2019-11-23',NULL),(5,'Flicka',5,5,'2019-08-14',NULL),(6,'Bill Burr: Why Do I Do This?',6,6,'2019-09-25',NULL),(7,'Thunderbirds',7,7,'2020-01-29',NULL),(8,'Barrens, The',8,8,'2019-06-17',NULL),(9,'Take Her, She\'s Mine',9,9,'2020-05-07',NULL),(10,'Uninvited, The',10,10,'2019-10-13',NULL),(11,'Renegades',11,11,'2020-03-18',NULL),(12,'Interstate 60',12,12,'2020-04-27',NULL),(13,'Vengo',13,13,'2019-11-24',NULL),(14,'Paper Moon',14,14,'2019-09-25',NULL),(15,'Joni\'s Promise',15,15,'2020-05-10',NULL),(16,'Cimarron Kid, The',16,16,'2020-01-22',NULL),(17,'Theory of Everything, The',17,17,'2019-10-30',NULL),(18,'Manhattan Melodrama',18,18,'2020-01-12',NULL),(19,'The Chumscrubber',19,19,'2019-12-07',NULL),(20,'...All the Marbles (California Dolls, The)',20,20,'2019-06-10',NULL),(21,'Waterloo',21,21,'2020-01-25',NULL),(22,'Mephisto',22,22,'2019-07-14',NULL),(23,'Wedding Crashers',23,23,'2019-12-10',NULL),(24,'Head',24,24,'2020-03-16',NULL),(25,'Lost Weekend, The',25,25,'2020-01-29',NULL),(26,'Legend of Zorro, The',26,26,'2020-01-23',NULL),(27,'Under Capricorn',27,27,'2019-09-15',NULL),(28,'Invention of Lying, The',28,28,'2019-12-20',NULL),(29,'OKA!',29,29,'2020-03-15',NULL),(30,'Me tulemme taas',30,30,'2019-11-16',NULL),(31,'Across the Sea of Time',31,31,'2020-02-23',NULL);
 /*!40000 ALTER TABLE `Disco` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -390,4 +391,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-29  4:21:27
+-- Dump completed on 2020-05-29  4:38:47
