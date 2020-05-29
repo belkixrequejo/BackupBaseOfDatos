@@ -338,7 +338,7 @@ CREATE TABLE `Sugerencia_Canciones` (
   KEY `Id_CancionS` (`Id_Cancion`),
   CONSTRAINT `Id_CancionS` FOREIGN KEY (`Id_Cancion`) REFERENCES `Cancion` (`Id_Cancion`),
   CONSTRAINT `Id_LR` FOREIGN KEY (`Id_LR`) REFERENCES `Lista_Reproduccion` (`Id_LR`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -347,6 +347,7 @@ CREATE TABLE `Sugerencia_Canciones` (
 
 LOCK TABLES `Sugerencia_Canciones` WRITE;
 /*!40000 ALTER TABLE `Sugerencia_Canciones` DISABLE KEYS */;
+INSERT INTO `Sugerencia_Canciones` VALUES (1,'Pee-wee\'s Big Adventure',1,1),(2,'Penguin Pool Murder',2,2),(4,'Lawnmower Man 2: Beyond Cyberspace',4,4),(5,'Jawbreaker',5,5),(6,'Amreeka',6,6),(7,'People Under the Stairs, The',7,7),(8,'Kiss Them for Me',8,8),(9,'Hot Rock, The',9,9);
 /*!40000 ALTER TABLE `Sugerencia_Canciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -392,4 +393,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-29  4:53:41
+-- Dump completed on 2020-05-29  4:58:17
